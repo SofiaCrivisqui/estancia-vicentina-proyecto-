@@ -867,3 +867,20 @@ body[data-page="home"] .body-content>.split:first-child h2 {
   }
 }
 
+/* Animación sutil en las fotografías */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .wide,
+  .portrait {
+    transition: transform 0.8s ease;
+  }
+
+  /* Fotos de las secciones */
+  .wide:hover {
+    transform: scale(1.015);
+  }
+
+  /* Fotos de las personas: zoom dentro de la card */
+  .person:hover .portrait {
+    transform: scale(1.04);
+  }
+}
