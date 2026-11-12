@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto y reservas | Estancia Vicentina</title>
+    <meta name="description" content="Estancia Vicentina. 160 lotes al oeste de Río Cuarto, Córdoba. Conocé el proyecto, el loteo y las condiciones de pago.">
+    <meta name="theme-color" content="#192541">
+    <meta property="og:title" content="Contacto y reservas | Estancia Vicentina">
+    <meta property="og:description" content="Al oeste de Río Cuarto. La vida que viene.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:image" content="assets/images/hero-home.webp">
+    <link rel="icon" href="assets/images/logo.webp">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="configuracion.js" defer>
+    </script>
+    <script src="assets/js/analytics.js" defer>
+    </script>
+    <script src="assets/js/app.js" defer>
+    </script>
+  </head>
+  <body data-page="contacto">
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Navegación principal">
+        <div class="nav-left">
+          <a href="index.html" data-page="home">PROYECTO</a>
+          <a href="loteo.html" data-page="loteo">LOTEO</a>
+        </div>
+        <a class="brand" href="index.html" aria-label="Estancia Vicentina, inicio">
+          <img src="assets/images/logo.webp" width="200" height="94" alt="Estancia Vicentina">
+        </a>
+        <div class="nav-right">
+          <a href="contacto.html" data-page="contacto">CONTACTO</a>
+          <a class="button" href="contacto.html#consulta" data-track="cta_click" data-label="Reservas menú">RESERVAS →</a>
+        </div>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">☰</button>
+      </nav>
+      <nav id="mobile-menu" class="mobile-menu" aria-label="Navegación móvil" hidden>
+        <a href="index.html">Proyecto</a>
+        <a href="loteo.html">Loteo</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html#consulta">Reservas →</a>
+      </nav>
+    </header>
+    <main id="contenido">
+      <section class="hero">
+        <img class="hero-image" src="assets/images/hero-contacto.webp" alt="Galería del clubhouse" loading="lazy" decoding="async">
+      </section>
+      <div class="container body-content">
+        <section class="split">
+          <h1>
+            <span class="" data-content="pago">Sé dueño de tu tiempo.</span>
+            <em class="" data-content="pago_italica">Condiciones de pago.</em>
+          </h1>
+          <div class="payment">
+            <h3 class="" data-content="financiado_titulo">— Financiado</h3>
+            <p class="" data-content="financiado">Entrega 20% + saldo en cuotas cuatrimestrales. Sin pago total inicial.</p>
+            <h3 class="" data-content="seis_titulo">— Contado en 6 meses</h3>
+            <p class="" data-content="seis">Pago total dentro de los 6 meses. 5% de descuento.</p>
+            <h3 class="" data-content="contado_titulo">— Contado inmediato</h3>
+            <p class="" data-content="contado">Pago total al momento de la reserva. 10% de descuento.</p>
+          </div>
+        </section>
+        <img class="wide" src="assets/images/clubhouse.webp" alt="Clubhouse de Estancia Vicentina" loading="lazy" decoding="async">
+        <section class="split" id="consulta">
+          <h2>
+            <span class="" data-content="reserva">Reservá tu lote.</span>
+            <em class="" data-content="reserva_italica">Empezá acá.</em>
+          </h2>
+          <form data-form="contacto" class="contact-form">
+            <label>*Nombre:<input name="nombre" required autocomplete="name" maxlength="100">
+          </label>
+          <label>*Correo electrónico:<input type="email" name="email" required autocomplete="email" maxlength="254">
+        </label>
+        <label>*Teléfono:<input type="tel" name="telefono" required autocomplete="tel" minlength="6" maxlength="30">
+      </label>
+      <label>Motivo de consulta:<select name="lote">
+      <option value="">Seleccioná lote</option>
+      <option value="origen">Lotes Origen</option>
+      <option value="encuentro">Lotes Encuentro</option>
+      <option value="reserva">Lotes Reserva</option>
+      <option value="general">Consulta general</option>
+    </select>
+  </label>
+  <label>Mensaje:<textarea name="mensaje" rows="3" maxlength="3000">
+</textarea>
+</label>
+<div class="honeypot" aria-hidden="true">
+  <label>No completar<input name="website" tabindex="-1" autocomplete="off">
+</label>
+</div>
+<button class="button" type="submit">ENVIAR CONSULTA →</button>
+<p class="form-status" role="status">
+</p>
+</form>
+</section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="sun" aria-hidden="true">☀</span>
+        <h2>
+          <span class="" data-content="footer_titulo">Al oeste de Río Cuarto</span>
+          <em class="" data-content="footer_titulo_italica">La vida que viene.</em>
+        </h2>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <address>
+          <a data-phone data-track="phone_click">
+          </a>
+          <a data-email data-track="email_click">
+          </a>Río Cuarto, Córdoba<br>República Argentina</address>
+        </div>
+        <div>
+          <h3>Suscribite al newsletter</h3>
+          <form data-form="newsletter">
+            <label class="sr-only" for="newsletter-email">Email</label>
+            <input id="newsletter-email" type="email" name="email" placeholder="Email" required autocomplete="email" maxlength="254">
+            <button class="button light" type="submit">ENVIAR →</button>
+            <p class="form-status" role="status">
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="socials">
+          <a data-social="facebook" aria-label="Facebook" hidden>f</a>
+          <a data-social="instagram" aria-label="Instagram" hidden>◎</a>
+          <a data-social="x" aria-label="X" hidden>𝕏</a>
+        </div>
+        <button class="privacy-settings" hidden>Preferencias de medición</button>
+        <a class="whatsapp" data-whatsapp data-track="whatsapp_click" aria-label="Consultar por WhatsApp" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 6A14 14 0 0 0 4 23L2 30l7-2A14 14 0 0 0 26 6Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M11 8c-3 0-3 4-1 7s6 7 10 7c3 0 4-3 3-4l-4-2-2 2c-3-1-5-3-6-6l2-1Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <div class="consent" hidden role="region" aria-label="Preferencias de medición">
+        <p>¿Nos permitís medir las visitas y las consultas para mejorar nuestras campañas?</p>
+        <button data-consent="granted">Aceptar</button>
+        <button data-consent="denied">Rechazar</button>
+      </div>
+      <noscript>
+        <p>Para enviar consultas desde esta página, activá JavaScript o escribinos a ventas@estanciavicentina.com.ar.</p>
+      </noscript>
+    </body>
+  </html>

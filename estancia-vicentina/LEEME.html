@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guía de uso — Estancia Vicentina</title>
+    <style>body{font:16px/1.65 system-ui;color:#192541;background:#eaece5;max-width:900px;margin:50px auto;padding:0 25px}h1{font:44px Georgia}h2{margin-top:40px}a{color:inherit}code{background:white;padding:3px 6px}table{border-collapse:collapse;width:100%}td,th{text-align:left;border-bottom:1px solid #adb4b9;padding:12px}aside{background:#fff;padding:20px;border-left:4px solid #ae915a}</style>
+  </head>
+  <body>
+    <h1>Estancia Vicentina<br>
+    <i>Guía de uso y entrega</i>
+  </h1>
+  <p>Tres páginas en HTML, CSS y JavaScript. No requiere Node, instalación de paquetes, compilación ni una base de datos para mostrar el sitio.</p>
+  <p>
+    <a href="index.html">Abrir la web →</a> · <a href="EDITOR.html">Abrir el editor →</a>
+  </p>
+  <h2>1. Empezar</h2>
+  <ol>
+    <li>Descomprimí el ZIP completo.</li>
+    <li>Abrí <code>index.html</code> con doble clic. Las tres páginas, imágenes y menú funcionan localmente.</li>
+    <li>Si usás Visual Studio Code, podés abrir la carpeta con Live Server.</li>
+  </ol>
+  <h2>2. Cambiar textos y datos sin programar</h2>
+  <ol>
+    <li>Abrí <code>EDITOR.html</code>.</li>
+    <li>Cambiá los textos, teléfono, correo o enlaces.</li>
+    <li>Presioná “Descargar configuración actualizada”.</li>
+    <li>Reemplazá <code>configuracion.js</code> por el archivo descargado. Si el navegador le agregó “(1)”, renombralo exactamente a <code>configuracion.js</code>.</li>
+    <li>Recargá la web. Si está publicada, subí ese archivo al hosting y recargá con Ctrl+F5.</li>
+  </ol>
+  <p>Los textos principales están en el editor. Los rótulos de navegación, campos, integrantes y cifras de distancias están en los HTML, identificados por sus etiquetas. El editor conserva los cambios solo cuando descargás y reemplazás el archivo.</p>
+  <h2>3. Cambiar imágenes</h2>
+  <p>Reemplazá el archivo dentro de <code>assets/images/</code> manteniendo nombre y formato WebP. No renombres una foto JPG a WebP: exportala al formato correcto. También podés actualizar la ruta en el HTML.</p>
+  <table>
+    <tr>
+      <th>Archivo</th>
+      <th>Uso</th>
+    </tr>
+    <tr>
+      <td>hero-home.webp</td>
+      <td>Portada Home</td>
+    </tr>
+    <tr>
+      <td>hero-loteo.webp</td>
+      <td>Portada Loteo</td>
+    </tr>
+    <tr>
+      <td>hero-contacto.webp</td>
+      <td>Portada Contacto</td>
+    </tr>
+    <tr>
+      <td>ingreso.webp</td>
+      <td>Ingreso del proyecto</td>
+    </tr>
+    <tr>
+      <td>clubhouse.webp</td>
+      <td>Clubhouse horizontal</td>
+    </tr>
+    <tr>
+      <td>clubhouse-vertical.webp / piscina.webp</td>
+      <td>Fotografías en pareja de Home</td>
+    </tr>
+    <tr>
+      <td>familia.webp</td>
+      <td>Imagen de Lotes Origen</td>
+    </tr>
+    <tr>
+      <td>plano-provisorio.webp</td>
+      <td>Plano reemplazable</td>
+    </tr>
+    <tr>
+      <td>ubicacion.webp</td>
+      <td>Mapa ilustrativo de ubicación</td>
+    </tr>
+  </table>
+  <h2>4. Plano definitivo</h2>
+  <p>El actual es el plano de la maqueta, señalado como provisorio. Reemplazá la imagen o cambiá su ruta en el editor. Desmarcá “Mostrar aclaración de plano provisorio” cuando lo aprueben. El plano puede ampliarse al hacer clic; no simula stock ni disponibilidad en tiempo real.</p>
+  <h2>5. Formularios y newsletter</h2>
+  <aside>Esta entrega incluye el frontend y las validaciones. El envío real requiere conectar un backend; no incluye PHP, SMTP ni credenciales. Hasta conectarlo, el sitio informa que el envío web no está disponible y ofrece el correo de contacto. Nunca muestra un éxito ficticio.</aside>
+  <p>El programador configura las URL de envío en <code>configuracion.js</code>. La documentación del contrato y los eventos está en <code>docs/INTEGRACION.md</code>. Newsletter usa su propio endpoint, sin suscribir contactos automáticamente.</p>
+  <h2>6. Meta Ads y Google Ads</h2>
+  <p>Los botones y formularios ya exponen eventos. Se usa un único contenedor de Google Tag Manager para instalar GA4, Google Ads y Meta Pixel, evitando duplicaciones. El ID queda vacío hasta que se disponga de la cuenta. Al configurar un ID válido se habilita el control de consentimiento; no se cargan etiquetas antes de aceptar.</p>
+  <p>El programador debe crear las etiquetas y conversiones dentro de GTM y probarlas con las cuentas reales. Los clics de WhatsApp son intenciones; los leads se registran únicamente tras la confirmación del servidor.</p>
+  <h2>7. Publicación</h2>
+  <p>Subí <code>index.html</code>, <code>loteo.html</code>, <code>contacto.html</code>, <code>configuracion.js</code> y la carpeta <code>assets</code> a un hosting con HTTPS. No hace falta subir el editor ni la documentación. Configurá el dominio en el editor para completar las URL canónicas e imagen social. Las rutas relativas permiten usar una subcarpeta.</p>
+  <h2>8. Qué falta confirmar</h2>
+  <ul>
+    <li>Plano definitivo y disponibilidad.</li>
+    <li>Enlaces reales de redes y LinkedIn: se ocultan mientras estén vacíos.</li>
+    <li>Backend de formulario/newsletter y sus validaciones de servidor.</li>
+    <li>ID GTM y etiquetas de las cuentas publicitarias.</li>
+    <li>Dominio y configuración de hosting.</li>
+  </ul>
+  <p>Se usaron los recursos de los PDF entregados, incluidas sus fuentes. Para publicación, el titular debe disponer de las licencias web correspondientes; puede reemplazar los archivos de fuente por los originales licenciados. Las fichas no entregadas de Lotes Encuentro y Reserva no se inventaron. Los puntos de carrusel de las maquetas se omitieron porque no se entregaron las otras diapositivas. Los paneles cerrados usan breves textos de apoyo derivados del contenido del proyecto, editables y sujetos a aprobación.</p>
+</body>
+</html>
