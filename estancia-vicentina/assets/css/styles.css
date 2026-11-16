@@ -675,7 +675,65 @@ details p {
   padding:14px;
   text-decoration:none;
 }
+img.mapa-ubicacion {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+leyenda-lotes {
+  width: 100%;
+  max-width: 340px;
+  margin: 28px 0;
+  color: #192641;
+}
 
+.leyenda-lotes__fila {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid #858996;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.leyenda-lotes__fila:last-child {
+  border-bottom: none;
+}
+
+.leyenda-lotes__color {
+  display: block;
+  flex: 0 0 25px;
+  height: 25px;
+  border: 1px solid #858996;
+  border-radius: 2px;
+}
+
+.lote-raiz {
+  background-color: #eeeada;
+}
+
+.lote-origen {
+  background-color: #e1dbc4;
+}
+
+.lote-encuentro {
+  background-color: #6b7485;
+}
+
+.lote-reserva {
+  background-color: #414b63;
+}
+
+img.mapa-ubicacion:hover {
+  transform: none;
+}
+.leyenda-lotes {
+  margin-top: 48px;
+}
 @media(min-width:2030px) {
   .hero {
     max-height:780px;
@@ -882,5 +940,26 @@ body[data-page="home"] .body-content>.split:first-child h2 {
   /* Fotos de las personas: zoom dentro de la card */
   .person:hover .portrait {
     transform: scale(1.04);
+  }
+    img.mapa-ubicacion {
+    transition: transform 0.8s ease;
+  }
+
+  img.mapa-ubicacion:hover {
+    transform: scale(1.015);
+  }
+    .plan-image {
+    transition: transform 0.8s ease;
+  }
+
+  .plan-image:hover {
+    transform: scale(1.015);
+  }
+}
+
+
+@media (max-width: 700px) {
+  .leyenda-lotes {
+    margin-top: 32px;
   }
 }

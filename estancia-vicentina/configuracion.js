@@ -18,8 +18,8 @@ window.VICENTINA = {
     "pablo-aimar": "https://www.linkedin.com/"
   },
   "plano": {
-    "imagen": "assets/images/plano-provisorio.webp",
-    "provisorio": true
+    "imagen": "assets/images/plano.png",
+    "provisorio": false
   },
   "formularios": {
     "contactoEndpoint": "",
