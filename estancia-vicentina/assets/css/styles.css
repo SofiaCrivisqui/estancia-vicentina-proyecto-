@@ -963,3 +963,9 @@ body[data-page="home"] .body-content>.split:first-child h2 {
     margin-top: 32px;
   }
 }
+@media (min-width: 1024px) {
+  .titulo-cambio {
+    font-size: 0.88em;
+    white-space: nowrap;
+  }
+}
